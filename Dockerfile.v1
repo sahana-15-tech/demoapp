@@ -1,0 +1,9 @@
+FROM demoapp:base
+
+COPY ./appv1.py /app
+
+COPY ./mainv1.py /app
+
+EXPOSE 8000
+
+CMD ["python", "/app/mainv1.py"]
